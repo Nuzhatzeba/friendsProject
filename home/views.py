@@ -144,7 +144,7 @@ def add_friend_page(request,user_name):
 
 
 def loadpage(request):
-    return render(request,'loadpage.html')
+    return render(request,'index.html')
 def profile(request,user_name):
     user = User.objects.get(username=user_name)
     fuser = FriendsUser.objects.get(f_uid=user.id)
